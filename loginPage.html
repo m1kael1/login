@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./loginPage.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <img src="./asset/top.svg" alt="" style="position: fixed;" class="top-bg">
+  <header>
+    <h1><a href="#hi" class="logo">Hi.</a></h1>
+    <div class="con-button">
+      <button onclick="showFormLogin()">Login</button>
+      <button onclick="showFormSignup()">Register</button>
+    </div>
+  </header>
+  <section class="land-page">
+    <div class="cont-maskot">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_pghdouhq.json" background="transparent"
+        speed="1" style="width: 260px; height: 260px;" loop autoplay></lottie-player>
+    </div>
+    <div class="cont-text">
+      <p style="margin: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ratione inventore
+        suscipit molestias
+        exercitationem cumque accusantium molestiae reprehenderit! Sequi maxime voluptatem corporis perferendis
+        aperiam
+        debitis pariatur distinctio ullam, dolore modi.</p>
+    </div>
+  </section>
+
+  <section class="blur">
+    <div class="card" id="login">
+      <button class="close" onclick="closeForm()">
+        <img src="./asset/icon-close.svg" alt="">
+      </button>
+      <span>Login</span>
+      <form>
+        <div class="cont-input">
+
+          <input type="text" placeholder="Username">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="cont-input">
+          <input type="password" placeholder="Password">
+        </div>
+      </form>
+      <button class="btn-in-card">Login</button>
+    </div>
+    <div class="card" id="sign-up">
+      <button class="close" onclick="closeForm()">
+        <img src="./asset/icon-close.svg" alt="">
+      </button>
+      <span>Sign Up</span>
+      <form id="form-signup">
+        <div class="cont-input">
+          <input type="text" placeholder="Username">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="cont-input">
+          <input type="text" placeholder="Email">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="cont-input">
+          <input type="password" placeholder="Password">
+        </div>
+      </form>
+      <button class="btn-in-card">Sign Up</button>
+    </div>
+  </section>
+  <!-- <section class="card" id="register">
+
+  </section> -->
+
+
+</body>
+
+</html>
