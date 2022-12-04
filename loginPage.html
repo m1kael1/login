@@ -25,7 +25,7 @@
       <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_pghdouhq.json" background="transparent"
         speed="1" style="width: 260px; height: 260px;" loop autoplay></lottie-player>
     </div>
-    <div class="cont-text">
+    <div class="cont-text" style="max-width: 525px;">
       <p style="margin: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ratione inventore
         suscipit molestias
         exercitationem cumque accusantium molestiae reprehenderit! Sequi maxime voluptatem corporis perferendis
@@ -34,48 +34,47 @@
     </div>
   </section>
 
-  <section class="blur">
+  <section id="logsign">
     <div class="card" id="login">
       <button class="close" onclick="closeForm()">
         <img src="./asset/icon-close.svg" alt="">
       </button>
       <span>Login</span>
-      <form>
+      <form action="" method="post" id="submit" name="inputuserform">
         <div class="cont-input">
-
-          <input type="text" placeholder="Username">
-          <i class="fa-solid fa-user"></i>
+          <input type="text" class="input" value="" placeholder="Username" name="uname" required>
+          <label for="input-text" id="username-login">Username</label>
         </div>
         <div class="cont-input">
-          <input type="password" placeholder="Password">
+          <input type="password" class="input" value="" placeholder="Password" id="pasw-login" name="psw" required>
+          <label for="input-pass" id="username-login">Password</label>
         </div>
+        <a href="" style="color: white;font-size: 12px;">Forgot password?</a>
       </form>
-      <button class="btn-in-card">Login</button>
+      <button class="btn-in-card" type="submit" onclick="myLogin()">Login</button>
     </div>
     <div class="card" id="sign-up">
       <button class="close" onclick="closeForm()">
         <img src="./asset/icon-close.svg" alt="">
       </button>
       <span>Sign Up</span>
-      <form id="form-signup">
+      <form action="" method="post" id="form-signup" name="inputuserform">
         <div class="cont-input">
-          <input type="text" placeholder="Username">
-          <i class="fa-solid fa-user"></i>
+          <input type="text" class="input" value="" placeholder="Username" name="uname" required>
+          <label for="input-text" id="username-login">Username</label>
         </div>
         <div class="cont-input">
-          <input type="text" placeholder="Email">
-          <i class="fa-solid fa-user"></i>
+          <input type="text" class="input" value="" placeholder="Email" name="uemail" required>
+          <label for="input-text" id="username-login">Email</label>
         </div>
         <div class="cont-input">
-          <input type="password" placeholder="Password">
+          <input type="password" class="input" value="" placeholder="Password" id="pasw-signup" name="psw" required>
+          <label for="input-pass" id="username-login">Password</label>
         </div>
       </form>
-      <button class="btn-in-card">Sign Up</button>
+      <button class="btn-in-card" type="submit" onclick="myLogin()">Sign Up</button>
     </div>
   </section>
-  <!-- <section class="card" id="register">
-
-  </section> -->
 
 
 </body>
